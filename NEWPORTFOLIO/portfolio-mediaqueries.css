@@ -1,0 +1,207 @@
+@media screen and (max-width: 1200px) {
+    
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+    }
+
+}
+
+
+ @media screen and (min-width: 1200px) {
+
+    #hamburger-nav {
+        display: none;
+    }
+}
+
+
+
+/*TABLET SCREEN SIZE*/
+@media (max-width: 800px) {
+    #profile {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+/*ABOUT SECTION*/
+
+.about_title_container h2 {
+  
+}
+.about_hero_container {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+  padding: 1rem 2rem 0 2rem;
+}
+
+.about_title_container {
+  padding-bottom: 0;
+}
+
+.about_image_container img {
+  height: 17rem;
+  width: auto;
+}
+
+.about_right_container {
+ gap: 1rem;
+ justify-content: flex-start;
+ padding-top: 1rem;
+}
+
+.about_right_container p {
+  text-align: center;
+}
+
+/*EXPERIENCE SECTION*/
+
+/*As Is (Relative Units handled this section)*/
+
+}
+
+
+/*PROEJCTS SECTION*/
+
+#projects_section {
+  margin: 15rem 0;
+}
+
+
+
+/*CONTACT SECTION*/
+
+/*AS IS - RELATIVE UNITS HANDLED THIS SECTION*/
+
+
+
+/*MOBILE SCREEN SIZE*/
+@media (max-width: 576px) {
+
+    /*NAVIGATION*/
+
+.logo {
+    font-size: 1.5rem;
+}
+
+    /*Profile Section*/
+
+  #profile {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .section_pic_container img {
+    height: 17rem;
+    width: 17rem;
+  }
+
+  .section_text_p1, {
+    font-size: 1rem;
+  }
+
+.title {
+    font-size: 2rem;
+}
+
+.section_text_p2 {
+    font-size: 1.5rem;
+}
+
+
+
+/*ABOUT SECTION*/
+
+#about_container {
+  height: 100vh;
+}
+
+.about_title_container h2{
+  font-size: 2rem;
+}
+
+.about_cards_container {
+  gap: 0.7rem;
+}
+
+.about_card1_container,
+.about_card2_container {
+  width: 50%;
+}
+
+/*EXPERIENCE SECTION*/
+
+#experience_container {
+  height: 100vh;
+}
+
+.experience_frontend_container {
+  margin: 0.1rem;
+  padding: 0;
+
+}
+
+.experience_cards_direct_container p,
+ .experience_cards_direct_container h3 {
+  font-size: 0.9rem;
+} 
+
+
+.experience_title_container h2 {
+  font-size: 1.2rem;
+}
+
+.exp_h2 {
+  font-size: 2rem;
+}
+
+
+/*PROJECTS SECTION*/
+
+#projects_section {
+  margin: 25rem 0;
+}
+
+/*CONTACT SECTION*/
+
+.contact_nav nav ul {
+  flex-direction: column;
+  font-size: 1rem;
+  gap: 1rem;
+  text-align: center;
+
+}
+
+.contact_container {
+  height: 53vh;
+}
+
+.contact_card_container {
+  gap: 0.5rem;
+  height: 3.4rem;
+  gap: 0;
+  padding: 0.3rem;
+}
+
+.contact_img_container img {
+  height: 2.3rem;
+}
+
+.contact_title {
+  font-size: 2rem;
+}
+
+.contact_direct_card_container {
+  font-size: 0.8rem;
+}
+
+.contact_text {
+  font-size: 0.8rem;
+  padding-bottom: 2rem;
+}
+
+}
