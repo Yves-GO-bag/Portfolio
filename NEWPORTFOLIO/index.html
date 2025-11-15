@@ -6,17 +6,17 @@
         <title>My Portfolio</title>
         <link rel="stylesheet" href="portfolio.css">
         <link rel="stylesheet" href="portfolio-mediaqueries.css">
-        
+    </head>    
     <body>
 
         <nav id="desktop-nav">
             <div class="logo">Carl Alvarez</div>
             <div>
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#about_container">About</a></li>
+                    <li><a href="#experience_container">Experience</a></li>
+                    <li><a href="#projects_section">Projects</a></li>
+                    <li><a href="#contact_container">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -34,10 +34,10 @@
                 </div>
 
                 <div class="menu-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="projects">Projects</a></li>
-                    <li><a href="contacts">Contacts</a></li>
+                    <li><a href="#about_container" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience_container" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects_section" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact_container" onclick="toggleMenu()">Contacts</a></li>
                 </div>
 
             </div>
@@ -55,17 +55,17 @@
                 <h1 class="title">Carl Alvarez</h1>
                 <p class="section_text_p2">Frontend Developer</p>
                 <div class="btn_container">
-                    <button class="btn btn_color1" onclick='location.href=./#contact'>Download CV</button>
-                    <button class="btn btn_color2" onclick='location.href=./#contact'>Contact Info</button>
+                    <a href="./assets/2025 Dev-CV.pdf" target="_blank"><button class="btn btn_color1" onclick='location.href=./#contact'>Download CV</button></a>
+                <button class="btn btn_color2" onclick='location.href=./#contact'>Contact Info</button>
                 </div> 
 
 
             <div class="icon_container">
                 <div>
-                    <img src="./assets//linkedinicon.svg" alt="linked in icon image">
+                    <a href="https://www.linkedin.com/in/carl-yves-john-alvarez-419b59340/" target="_blank"><img src="./assets//linkedinicon.svg" alt="linked in icon image"></a>
                 </div>
                 <div>
-                    <img src="./assets//githubicon.svg" alt="Git hub icon image">
+                    <a href="https://github.com/Yves-GO-bag" target="_blank"><img src="./assets//githubicon.svg" alt="Git hub icon image"></a>
                 </div>
             </div>
 
@@ -106,14 +106,13 @@
                         </div>
                     </div>
                     <div class="about_text_container">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Hic quis reprehenderit et laborum, rem, dolore eum quod 
-                            voluptate exercitationem nobis, nihil esse debitis maxime
-                             facere minus sint delectus velit in eos quo officiis explicabo
-                              deleniti dignissimos. Eligendi illum libero dolorum cum
-                               laboriosam corrupti quidem, reiciendis ea magnam? Nulla,
-                                impedit fuga!
-                            </p>
+                        <p>Self-taught Front-End Developer and tech professional with hands-on 
+                            experience building responsive, interactive websites using HTML, CSS,
+                            and JavaScript. Experienced in UI/UX design, Git version control, 
+                            website deployment, and client project management. Proven ability 
+                            to deliver functional, user-friendly websites for personal and client
+                            projects while managing business operations.
+                        </p>
                     </div>
                 </div>
              
@@ -129,7 +128,7 @@
                 </div>
            
 
-     <div class="exp-wrap">
+     <div class="exp_wrap">
 
          <div class="experience_frontend_container">
                 <div class="experience_title_container">
@@ -234,11 +233,11 @@
         <div class="projects_card">
             <div class="projects_cards_border">
                 <div class="projects_cards_assets">
-                    <img src="./assets/restaurantweblinkinimg.png" alt="Project Image"> 
+                    <img src="./assets/Restaurantwebimg.jpg" alt="Project Image"> 
                     <h2>Project One</h2>
                     <div class="projects_btn_container">
                         <div class="projects_btn">Github</div>
-                        <div class="projects_btn"><a href="https://dreamy-fox-fdd81d.netlify.app/" target="_blank">Live Demo</a></div>    
+                        <a href="https://dreamy-fox-fdd81d.netlify.app/" target="_blank" class="deco-none"><div class="projects_btn">Live Demo</div></a>  
                     </div>
                 </div>
             </div>
@@ -250,7 +249,7 @@
                     <h2>Project Two</h2>
                     <div class="projects_btn_container">
                         <div class="projects_btn">Github</div>
-                        <div class="projects_btn">Live Demo</div>    
+                        <a href="https://www.tinman168.com/" target="_blank" class="deco-none"><div class="projects_btn">Live Demo</div></a>
                     </div>
                 </div>
             </div>
@@ -258,11 +257,11 @@
         <div class="projects_card">
             <div class="projects_cards_border">
                 <div class="projects_cards_assets">
-                    <img src="./assets/projectimg.jpg" alt="Project Image">
-                    <h2>Projects Three</h2>
+                    <img src="./assets/Devwebsiteimg.jpg" alt="Project Image">
+                    <h2>Project Three</h2>
                     <div class="projects_btn_container">
                         <div class="projects_btn">Github</div>
-                        <div class="projects_btn">Live Demo</div>    
+                        <a href="https://famous-rabanadas-e7119a.netlify.app/" class="deco-none"><div class="projects_btn">Live Demo</div></a>
                     </div>
                 </div>
             </div>
@@ -276,18 +275,29 @@
 
 <footer class="contact_section">
 
-    <div class="contact_container">
+    <div id="contact_container">
         <p>Get in Touch</p>
         <h2 class="contact_title">Contact me</h2>
         <div class="contact_card_container">
+    
             <div class="contact_direct_card_container">
-               <div class="contact_img_container"><img src="./assets/emailicon.svg" alt=""></div>
+               <div class="contact_img_container">
+                <a href="mailto:yvesinnevada360@gmail.com">
+                <img src="./assets/emailicon.svg" alt="">
+                    </a>
+            </div>
                 <p>Yvesinnevada360@gmail.com</p>
             </div>
+      
             <div class="contact_direct_card_container">
-               <div class="contact_img_container"><img src="./assets/linkedinicon.svg" alt=""></div>
-                <p>LinkedIn</p>
+               <div class="contact_img_container">
+                 <a href="https://www.linkedin.com/in/carl-yves-john-alvarez-419b59340/" target="_blank">
+                <img src="./assets/linkedinicon.svg" alt="">
+                </a>
+               </div>
+                    <p>LinkedIn</p>
             </div>
+          
         </div>
     </div>
 
@@ -295,22 +305,20 @@
 <div class="contact_nav">
     <nav>
         <ul>
-            <li><a>About</a></li>
-            <li><a>Experience</a></li>
-            <li><a>Projects</a></li>
-            <li><a>Contact</a></li>
+            <li><a href="#about_container">About</a></li>
+            <li><a href="#experience_container">Experience</a></li>
+            <li><a href="#projects_section">Projects</a></li>
+            <li><a href="#contact_container">Contact</a></li>
         </ul>
     </nav>
 
 </div>
 
-<div class="contact_text"><p>Copyright © 2023 Carl Alvarez. All Rights Reserved.</p></div>
+<div class="contact_text"><p>Copyright © 2025 Carl Alvarez. All Rights Reserved.</p></div>
 
 </footer>
 
 
-        <script src="portfolio.js">
-
-        </script>
+        <script src="portofolio.js"></script>
     </body>
 </html>

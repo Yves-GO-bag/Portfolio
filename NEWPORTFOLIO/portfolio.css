@@ -77,7 +77,9 @@ a:hover {
 /*HAMBURGER NAV*/
 
 #hamburger-nav {
-   /* display: none;*/
+    display: none;
+    justify-content: space-between;
+    padding: 0 5rem;
 }
 
 .hamburger-menu {
@@ -107,12 +109,36 @@ a:hover {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     width: fit-content;
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
 }
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links a:hover {
+    color: gray;
+}
+
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
 
 .hamburger-icon.open span:first-child {
     transform: rotate(45deg) translate(10px, 5px);
@@ -129,14 +155,7 @@ a:hover {
 
 .hamburger-icon span:first-child {
     transform: none;
-}
-
-.hamburger-icon span:first-child {
-   opacity: 1;
-}
-
-.hamburger-icon span:first-child {
-    transform: none;
+    opacity: 1;
 }
 
 /*Profile Section*/
@@ -347,7 +366,7 @@ a:hover {
     padding: 1rem 1rem;
 }
 
-.exp-wrap {
+.exp_wrap {
     display: flex;
     gap: 0;
     justify-content: center;
@@ -396,7 +415,7 @@ a:hover {
     font-size: 1.5rem;
 }
 
-.contact_container {
+#contact_container {
     background-color: white;
     height: 68vh;
     display: flex;
@@ -464,8 +483,19 @@ a:hover {
     margin-top: 1rem;
     font-size: 0.7rem;
     font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
+.projects_btn:hover {
+    background-color: rgb(67, 64, 64);
+    color: white;
+    
+}
+
+.projects_cards_assets .deco-none{
+    text-decoration: none;
+}
 
 .projects_cards_container {
     display: flex;
